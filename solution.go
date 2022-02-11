@@ -1,9 +1,13 @@
 package main
 
 import (
-	"github.com/kyokomi/emoji"
+	"fmt"
+	"strings"
+
+	"github.com/kyokomi/emoji/v2"
 )
 
 func GetMessage() string {
-	return emoji.Sprint("Hello :world_map:!")
+	return fmt.Sprintf("%s!",
+		strings.TrimRight(emoji.Sprint("Hello :world_map:"), " "))
 }
