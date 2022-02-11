@@ -1,4 +1,4 @@
-module lesson_00
+module main
 
 go 1.17
 
